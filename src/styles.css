@@ -32,7 +32,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    border: 8px;
+    border: 2px solid  #bdbdbd;
     border-radius: 10px;
     padding: 4px 12px;
 }
@@ -55,9 +55,14 @@ body {
 }
 
 #weather {
-    /* display: none */
+    display: none;
     margin-top: 20px;
 }
+
+#weather.show {
+    display: block;
+}
+
 
 #weather #title {
     text-align: center;
@@ -135,4 +140,16 @@ body {
 
 #wind_icon {
     color: #7c3aed;
+}
+
+#alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#alert img {
+    width: 200px;
+    margin-top: 20px;
 }
